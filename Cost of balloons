@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main(){
+ 
+int t,r,y,p;
+ 
+cin>>t;
+ 
+while(t--){
+ 
+    
+ 
+     cin>>r>>y;
+ 
+     cin>>p;
+ 
+     bool A[p];
+ 
+     bool B[p];
+ 
+     int count1=0,count2=0;
+ 
+     for(int i=0;i<p;i++){
+ 
+         cin>>A[i]>>B[i];
+ 
+         if(A[i]==1)
+ 
+         count1++;
+ 
+         if(B[i]==1)
+ 
+            count2++;
+ 
+     }
+ 
+     int res=(r*count1+y*count2)>(r*count2+y*count1)?(r*count2+y*count1):(r*count1+y*count2);
+ 
+     cout<<res;
+ 
+     cout<<endl;
+ 
+}
+ 
+}
